@@ -113,7 +113,6 @@ def main():
     while not validate_email(email):
         print("Invalid email. Please enter a valid email.")
         email = input("Enter your email: ")
-
     cart = []
     total_cost = 0
 
