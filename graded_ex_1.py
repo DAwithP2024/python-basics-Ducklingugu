@@ -33,10 +33,10 @@ products = {
 
 def display_sorted_products(products_list, sort_order):
     while True:
-        if sort_order == "1" or "asc": 
+        if sort_order == "1" or sort_order.lower() == "asc":: 
             sorted_products = sorted(products_list, key=lambda x: x[1], reverse=False)
             break
-        elif sort_order == "2" or "desc":  
+        elif sort_order == "2" or sort_order.lower() == "desc"::  
             sorted_products = sorted(products_list, key=lambda x: x[1], reverse=True)
             break
         else:
